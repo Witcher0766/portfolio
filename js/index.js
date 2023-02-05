@@ -123,20 +123,28 @@ $('.pinterest').click(function(e) {
 
 
 
-// sending email
 
-function sendEmail(){
-  Email.send({
-    Host : "smtp.gmail.com",
-    Username : "vk7124794@gmail.com",
-    Password : "7124794burger",
-    To : 'kumarvishwajeet076@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "Subject: " + document.getElementById("subject").value,
-    Body : "Name: " + document.getElementById("name").value
-    + "<br> Email: " + document.getElementById("email").value
-    + "<br> Message: " + document.getElementById("message").value
-}).then(
-  message => alert(message)
-);
-}
+
+
+// projects links 
+
+$('.autoquotes').click(function(e) {
+  window.open('https://witcher0766.github.io/auto_quotes/');
+  e.preventDefault();
+});
+
+$('.landingpage1').click(function(e) {
+  window.open('https://witcher0766.github.io/resfrontenedwebpage/');
+  e.preventDefault();
+});
+
+$('.landingpage2').click(function(e) {
+  window.open('https://witcher0766.github.io/My_first_res_portfolio_website/');
+  e.preventDefault();
+});
+
+
+
+
+
+

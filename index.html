@@ -243,19 +243,19 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="images/projects/auto_quotes.png" alt="auto_quotes_page">
+          <img src="images/projects/auto_quotes.png" class="autoquotes" alt="auto_quotes_page">
         </div>
         <div class="swiper-slide">
-          <img src="images/projects/landing_page1.png" alt="auto_quotes_page">
+          <img src="images/projects/landing_page1.png" class="landingpage1" alt="landingpage1">
         </div>
         <div class="swiper-slide">
-          <img src="images/projects/landing_page2.png" alt="auto_quotes_page">
+          <img src="images/projects/landing_page2.png" class="landingpage2" alt="landingpage2">
         </div>
         <div class="swiper-slide">
-          <img src="images/projects/dynamic_page.png" alt="auto_quotes_page">
+          <img src="images/projects/dynamic_page.png" class="dynamic_page" alt="dynamic_page">
         </div>
         <div class="swiper-slide">
-          <img src="images/projects/auto_quotes.png" alt="auto_quotes_page">
+          <img src="images/projects/landingpage3.png" alt="auto_quotes_page">
         </div>
       </div>
       <div class="swiper-button-next"></div>
@@ -390,29 +390,27 @@
           </section>
 
           <section class="contact-container1">
+            <div class="alert">Your message has been sent</div>
             <div class="down-contact">
                 <img data-aos="zoom-in-left" class="ladder-img" src="images/ladder.jpg" alt="ladder-img">
               <div data-aos="zoom-in-right" class="form1">
-              <form onsubmit="sendEmail(); reset(); return false" action="https://formsubmit.co/kumarvishwajeet076@gmail.com" method="POST">
+              <form action="" id="contactForm" >
                 <label for="fname">Full Name</label>
-                <input type="text" id="name" name="fulltname" placeholder="Enter Your Name" required>
-                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
                 <label for="subject" >Subject</label>
+
                 <input type="text" id="subject" name="subject" placeholder="Subject" required>
 
                 <label for="email">Your Email</label>
+
                 <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
             
-            
-                <!-- <label for="country">Country</label>
-                <select id="country" name="country">
-                  <option value="australia">Australia</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
-                </select> -->
-            
-                <label for="subject">Message</label>
-                <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+    
+                <label for="message">Message</label>
+
+                <textarea  id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
             
                 <input type="submit" value="Submit" src="page/thanks.html">
               </form>
@@ -471,6 +469,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

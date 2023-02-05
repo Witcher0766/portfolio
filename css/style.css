@@ -810,3 +810,19 @@ input[type=email]{
     color: #0f55bd;
   }
 
+
+
+
+  /* form css  */
+
+
+
+  .alert{
+    text-align: center;
+    padding:10px;
+    background:#55efc4;
+    color:black;
+    margin-bottom:10px;
+    display:none;
+    transition: all 0.3s;
+  }
