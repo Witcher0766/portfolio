@@ -1,0 +1,107 @@
+
+:root {
+  --clr-primary-color-1: hsl(7, 99%, 70%);
+  --clr-primary-color-2: hsl(51, 100%, 49%);
+  --clr-primary-color-3: hsl(167, 40%, 24%);
+  --clr-primary-color-4: hsl(198, 62%, 26%);
+  --clr-primary-color-5: hsl(168, 34%, 41%);
+  --clr-primary-color-6: hsl(202, 85%, 66%);
+  --clr-primary-color-7: hsl(168, 52%, 70%);
+  --clr-sec-color-1: hsl(212, 27%, 19%);
+  --clr-sec-color-2: hsl(213, 9%, 39%);
+  --clr-sec-color-3: hsl(210, 25%, 55%);
+  --clr-sec-color-4: hsl(210, 4%, 67%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-sky-blue: #3498db;
+  --clr-sky-dark-blue: #2980b9;
+  --clr-tail-blue: #74b9ff;
+  --clr-electron-blue: #0984e3;
+}
+
+
+
+.typewriter p {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent }
+  }
+
+
+
+
+  /* slider  */
+
+
+  html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background:#050505;
+        /* background-color: white; */
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #050505;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .swiper-slide img:hover {
+        transform: scale(1.1);
+      }
+
+
+
+  
+
+
+
+
+
+
+
+  

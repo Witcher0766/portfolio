@@ -16,71 +16,43 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/anime.css" />
     <link rel="stylesheet" href="css/res.css">
+    <link rel="stylesheet" href="css/update.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- portfolio html start  -->
-    <div class="pointer">
-      <i class="fas fa-chevron-up int" id="int"></i>
+ 
+    <div class="hybrid tn">
+    <div class="nav-bar sticky-top">
+      <ul>
+        <li> <a class="first-a" href="#"><i class="fa-solid fa-house fa-beat"></i>
+        </a> </li>
+        <li> <a href="#about"><i class="fa-solid fa-user fa-beat"></i></a> </li>
+        <li> <a href="#projects"><i class="fa-solid fa-folder fa-beat"></i></a> </li>
+        <li> <a href="#resume"><i class="fa-solid fa-file fa-beat"></i></a> </li>
+        <li> <a class="second-a" href="#contact"><i class="fa-solid fa-phone fa-beat"></i></a> </li>
+      </ul>
     </div>
-    <div class="container-fluid tn " id="sticky">
-      <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
-          <nav >
-            <div class="nav-bar">
-                <i class='bx bx-menu sidebarOpen' ></i>
-                <span class="logo navLogo"><a href="#">PortFolio</a></span>
-    
-                <div class="menu">
-                    <div class="logo-toggle">
-                        <span class="logo"><a href="#">PortFolio</a></span>
-                        <i class='bx bx-x siderbarClose'></i>
-                    </div>
-    
-                    <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-    
-                <div class="darkLight-searchBox">
-                    <div class="dark-light">
-                        <i class='bx bx-moon moon'></i>
-                        <i class='bx bx-sun sun'></i>
-                    </div>
-    
-                    <div class="searchBox">
-                       <div class="searchToggle">
-                        <i class='bx bx-x cancel'></i>
-                        <i class='bx bx-search search'></i>
-                       </div>
-    
-                        <div class="search-field">
-                            <input type="text" placeholder="Search...">
-                            <i class='bx bx-search'></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    
-        </div>
-      </div>
-    </div>
+
+
+  
 
 
     <div class="container-fluid tn">
       <div class="row">
         <div class="col-md-10 col-12 mx-auto">
-    <section >
+    <section>
       <div class="nav-second">
         <div class="typewriter">
           <p class="p10">Success is a journey not a destination.</p>
@@ -96,7 +68,7 @@
         </p>
 
         <div class="button2">
-          <button class="btn5">Get Started</button>
+          <li><a href="#projects" class="btn5">Projects</a></li>
         </div>
         <div class="area">
           <ul class="circles">
@@ -139,10 +111,10 @@
                 <br>
                 My specialty is front-end web design and development using HTML, CSS and JAVASCRIPT.
                 <br>
-                <!-- When I'm not designing, you'll find me in the gym or typing on laptops. -->
+     
               </p>
 
-              <img data-aos="flip-right" src="images/me.jpg" alt="me-img" />
+              <img class="me" data-aos="flip-right" src="images/skills/people1.gif" alt="me-img" />
             </div>
 
 
@@ -158,7 +130,7 @@
                 <li data-aos="fade-up"
                 data-aos-duration="1500"><span>DEGREE // B.TECH</span></li>
                 <li data-aos="fade-up"
-                data-aos-duration="1000"><span>EMAIL // kumarvishwajeet076@gmail.com</span></li>
+                data-aos-duration="1000"><span>EMAIL // kumarvishwajeet076@ gmail.com</span></li>
               </ul>
               <ul>
                 <li data-aos="fade-up"
@@ -168,7 +140,7 @@
                 <li data-aos="fade-up"
                 data-aos-duration="2000"><span>WHERE // PATNA, BIHAR</span></li>
                 <li data-aos="fade-up"
-                data-aos-duration="1500"><span>WHEN // 2022, CURRENT</span></li>
+                data-aos-duration="1500"><span>WHEN // 2023, CURRENT</span></li>
                 <li data-aos="fade-up"
                 data-aos-duration="1000"><span>WHY // PASSION</span></li>
               </ul>
@@ -177,52 +149,30 @@
             <div class="skills">
               <h1>Skill</h1>
               <div  class="wrapper">
-                <div data-aos="flip-left" class="skill-container">
-                  <h2>My skills</h2>
-
-                  <div class="skills1">
-                    <div class="details">
-                      <span>HTML</span>
-                      <span>90%</span>
-                    </div>
-
-                    <div class="bar">
-                      <div id="html-bar"></div>
-                    </div>
-                  </div>
-
-                  <div class="skills1">
-                    <div class="details">
-                      <span>CSS</span>
-                      <span>70%</span>
-                    </div>
-
-                    <div class="bar">
-                      <div id="css-bar"></div>
-                    </div>
-                  </div>
-
-                  <div class="skills1">
-                    <div class="details">
-                      <span>JavaScript</span>
-                      <span>60%</span>
-                    </div>
-
-                    <div class="bar">
-                      <div id="javascript-bar"></div>
-                    </div>
-                  </div>
-
-                  <div class="skills1">
-                    <div class="details">
-                      <span>Jquery</span>
-                      <span>50%</span>
-                    </div>
-
-                    <div class="bar">
-                      <div id="jquery-bar"></div>
-                    </div>
-                  </div>
+                <div class="skill-first">
+                  <img class="skil" src="images/skills/html.png" alt="html">
+                  <p>HTML</p>
+                </div>
+                <div class="skill-first">
+                  <img class="skil" src="images/skills/css.png" alt="css">
+                  <p>CSS</p>
+                </div>
+                <div class="skill-first">
+                  <img class="skil" src="images/skills/jjs.png" alt="javascript">
+                  <p>JAVASCRIPT</p>
+                </div>
+                <div class="skill-first">
+                  <img class="skil" src="images/skills/react.png" alt="react">
+                  <p>REACTJS</p>
+                </div>
+                <div class="skill-first">
+                  <img class="skil" src="images/skills/nodejs.png" alt="nodejs">
+                  <p>NODEJS</p>
+                </div>
+              
+                <div class="skill-first">
+                  <img class="skil" src="images/skills/c++.png" alt="c++">
+                  <p>C++</p>
                 </div>
               </div>
             </div>
@@ -239,30 +189,131 @@
       <div class="row">
         <div class="col-md-10 col-12 mx-auto">
           <h1 class="portfolio-h1">Projects</h1>
-          <section data-aos="zoom-in" class="portfolio-section">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/projects/auto_quotes.png" class="autoquotes" alt="auto_quotes_page">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/projects/landing_page1.png" class="landingpage1" alt="landingpage1">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/projects/landing_page2.png" class="landingpage2" alt="landingpage2">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/projects/dynamic_page.png" class="dynamic_page" alt="dynamic_page">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/projects/landingpage3.png" alt="auto_quotes_page">
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
+          <section class="portfolio-section">
+
+
+            <div class="project-1">
+              <img class="project-img" src="images/projects/huddle.png" alt="Huddle-site">
+              <div class="desc">
+                <h4>Huddle Page</h4>
+                <p>Landing_page using Reactjs</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/react-landing-page" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li><a class="live-1" href="https://witcher0766.github.io/react-landing-page/" target="_blank"><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+            
+            <div class="project-1">
+              <img class="project-img" src="images/projects/weather_site.png" alt="weather-site">
+              <div class="desc">
+                <h4>Weather Site</h4>
+                <p>Weather Site with Real-time-API</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/React_Weather_Site" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li><a class="live-1" href="https://witcher0766.github.io/React_Weather_Site/" target="_blank"><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+
+            <div class="project-1">
+              <img class="project-img" src="images/projects/resturant.png" alt="resturant-site">
+              <div class="desc">
+                <h4>Resturant Site</h4>
+                <p>React site using API</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/resturant-site" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li><a class="live-1" href="https://witcher0766.github.io/resturant-site/" target="_blank"><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+
+            <div class="project-1">
+              <img class="project-img" src="images/projects/react_todo.png" alt="react_todo">
+              <div class="desc">
+                <h4>React Todo</h4>
+                <p>A Todo using Reactjs</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/reactTodo" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li><a class="live-1" href="https://witcher0766.github.io/reactTodo/" target="_blank"><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+
+            <div class="project-1">
+              <img class="project-img" src="images/projects/landing_page1.png" alt="landing_page1">
+              <div class="desc">
+                <h4>Landing Page</h4>
+                <p>A landing_page using html, css, js</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/resfrontenedwebpage" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li><a class="live-1" href="https://witcher0766.github.io/resfrontenedwebpage/" target="_blank"><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+
+            <div class="project-1">
+              <img class="project-img" src="images/projects/landing_page2.png" alt="landing_page1">
+              <div class="desc">
+                <h4>Landing Page</h4>
+                <p>A landing_page using html, css, js</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/My_first_res_portfolio_website" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li><a class="live-1" href="https://witcher0766.github.io/My_first_res_portfolio_website/" target="_blank"><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+            <div class="project-1">
+              <img class="project-img" src="images/projects/auto_quotes.png" alt="landing_page1">
+              <div class="desc">
+                <h4>Auto Quote</h4>
+                <p>Auto_Quote site using html, css, js, api</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/auto_quotes" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li><a class="live-1" href="https://witcher0766.github.io/auto_quotes/" target="_blank"><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+            <div class="project-1">
+              <img class="project-img" src="images/projects/dynamic_page.png" alt="landing_page1">
+              <div class="desc">
+                <h4>Weather Page</h4>
+                <p>A site using template engines</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/weathersite" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li class="disable-project"><a class="live-1" href="#" ><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+      
+            <div class="project-1">
+              <img class="project-img" src="images/projects/landing_page4.png" alt="landing_page1">
+              <div class="desc">
+                <h4>Landing Page</h4>
+                <p>Site using handlebars, mongodb</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/nodejsLandingPage" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li class="disable-project"><a class="live-1" href="#"><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+            <div class="project-1">
+              <img class="project-img" src="images/projects/landing_page3.png" alt="landing_page1">
+              <div class="desc">
+                <h4>Blogr Page</h4>
+                <p>A blogr_page using html, css, js</p>
+              </div>
+              <div class="project-btn">
+                <li><a class="code-1" href="https://github.com/Witcher0766/blogr-landing-page" target="_blank"><i class="fa-solid fa-code"></i>Code</a></li>
+                <li class="disable-project"><a class="live-1" href="#" ><i class="fa-solid fa-globe"></i>Live</a></li>
+              </div>
+            </div>
+
+  
   </section>
+
+
+  
   </div>
 </div>
 </div> 
@@ -279,78 +330,39 @@
           <h1 class="resume-h1">Resume</h1>
           <section class="resume-section">
 
-            <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box1">
-              <h2>
-                Profile
-              </h2>
-              <p>Enthusiastic computer science undergraduate. Looking for a role, where I can grow and learn from experienced team members while drawing on project experience. Especially interested in web development as a full-stack developer. Proficient in various platforms, languages, and embedded systems. And have experiences with the latest cutting edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.</p>
-            </div>
-
-            <div class="main-box">
-            <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box2">
-              <h2>Education</h2>
-              <p>
-                <b>B.Tech, College Of Enginerring Roorkee</b>
-                <br>
-                Currently pursuing B.Tech in Computer Science.
-              </p>
-              <p>
-                <b>Vidya Sanskar High School</b>
-                <br>
-                12th CBSE Board, PCM Stream, secured 81.2%.
-              </p>
-
-              <p>
-                <b>J.M.V Residential Public School</b>
-                <br>
-                10th CBSE Board, secured 9.2 cgpa.
-              </p>
-            </div>
-
-            <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box3">
-              <h2>Skills</h2>
-              <p>
-                <ul>
-                  <li>HTML5 // INTERMEDIATE</li>
-                  <li>CSS // INTERMEDIATE</li>
-                  <li>JAVASCRIPT // SKILL-FUL</li>
-                  <li>JQUERY // SKILL-FULL</li>
-                  <li>JAVA // SKILL-FUL</li>
-                </ul>
-                <ul>
-                  <li>NODE-JS // SKILL-FUL</li>
-                  <li>EXPRESS-JS // SKILL-FUL</li>
-                  <li>MONGODB // SKILL-FUL</li>
-                  <li>TEMPLATE ENGINE // SKILL-FULL</li>
-                  <li>C++ // SKILL-FUL</li>
-                </ul>
-              </p>
-            </div>
-          </div>
-
-          <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box4">
-            <h2>Languages</h2>
-            <ul>
-              <li>English</li>
-              <li>Hindi(Native Speaker)</li>
-            </ul>
-          </div>
-          <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box5">
-            <h2>Hobbies</h2>
-       <p>
-        My hobbies is to listen hip hop songs, typing and exploring different things on the Internet.
-       </p>     
+          <div class="resume-button">
+            <a href="resume/Resume.pdf" download><i class="fa-solid fa-download fa-shake"></i>Download my CV</a>
           </div>
           <div class="resume-link">
             <a href="https://resume.io/r/QTTSZjW0x
             " target="_blank">Resume_Link</a>
           </div>
           </section>
+
+          <div class="counter-up">
+            <div class="content">
+              <div class="box">
+                <div class="icon"><i class="fas fa-history"></i></div>
+                <div class="counter">724</div>
+                <div class="text">Working Hours</div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fas fa-gift"></i></div>
+                <div class="counter">508</div>
+                <div class="text">Completed Projects</div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fas fa-users"></i></div>
+                <div class="counter">436</div>
+                <div class="text">Happy Clients</div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fas fa-award"></i></div>
+                <div class="counter">120</div>
+                <div class="text">Batches</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -368,21 +380,21 @@
 
           <section class="contact-container">
             <div class="up-contact">
-            <div data-aos="zoom-in" class="cont1 con">
+            <div  class="cont1 con">
               <img  class="cont-icons" src="images/icons/location.png" alt="location-img">
               <p>Address: East ram krishna
 <br>                nagar patna-27</p>
             </div>
-            <div data-aos="zoom-in" class="cont2 con">
+            <div  class="cont2 con">
               <img class="cont-icons" src="images/icons/telephone-call.png" alt="call-img">
               <p>Phone: <a href="">7070761869</a></p>
             </div>
 
-            <div data-aos="zoom-in" class="cont3 con">
+            <div  class="cont3 con">
               <img class="cont-icons" src="images/icons/email.png" alt="email-img">
               <p>Email: <a href="https://mail.google.com " target="_blank">kumarvishwajeet076@gmail.com</a></p>
             </div>
-            <div data-aos="zoom-in" class="cont4 con">
+            <div  class="cont4 con">
               <img class="cont-icons" src="images/icons/web.png" alt="web-img">
               <p>Website: <a href="https://www.google.com/" target="_blank">Google</a></p>
             </div>
@@ -392,8 +404,8 @@
           <section class="contact-container1">
             <div class="alert">Your message has been sent</div>
             <div class="down-contact">
-                <img data-aos="zoom-in-left" class="ladder-img" src="images/ladder.jpg" alt="ladder-img">
-              <div data-aos="zoom-in-right" class="form1">
+                <img  class="ladder-img" src="images/ladder.jpg" alt="ladder-img">
+              <div  class="form1">
               <form action="" id="contactForm" >
                 <label for="fname">Full Name</label>
 
@@ -448,7 +460,7 @@
               <div class="col-md-10 col-12 mx-auto">  
                 <div class="copyright">
                   <div class="copyright2">
-                    © 2022 Copyright:
+                    © 2023 Copyright:
                     <a class="copyright1" href="https://www.google.com/">mywebsite</a>
                   </div>
                 </div>
@@ -456,6 +468,7 @@
                 </div>
                 </div>
 
+              </div>
 
     <!-- JavaScript Bundle with Popper -->
 
@@ -472,5 +485,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="js/index.js"></script>
     <script src="js/form.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.counter').counterUp({
+          delay: 10,
+          time: 1200
+        });
+      });
+      </script>
   </body>
 </html>
