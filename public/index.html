@@ -1,476 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/anime.css" />
-    <link rel="stylesheet" href="css/res.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.19.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.19.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.19.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <title>Portfolio</title>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
   </head>
   <body>
-    <!-- portfolio html start  -->
-    <div class="pointer">
-      <i class="fas fa-chevron-up int" id="int"></i>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
-    <div class="container-fluid tn " id="sticky">
-      <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
-          <nav >
-            <div class="nav-bar">
-                <i class='bx bx-menu sidebarOpen' ></i>
-                <span class="logo navLogo"><a href="#">PortFolio</a></span>
-    
-                <div class="menu">
-                    <div class="logo-toggle">
-                        <span class="logo"><a href="#">PortFolio</a></span>
-                        <i class='bx bx-x siderbarClose'></i>
-                    </div>
-    
-                    <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-    
-                <div class="darkLight-searchBox">
-                    <div class="dark-light">
-                        <i class='bx bx-moon moon'></i>
-                        <i class='bx bx-sun sun'></i>
-                    </div>
-    
-                    <div class="searchBox">
-                       <div class="searchToggle">
-                        <i class='bx bx-x cancel'></i>
-                        <i class='bx bx-search search'></i>
-                       </div>
-    
-                        <div class="search-field">
-                            <input type="text" placeholder="Search...">
-                            <i class='bx bx-search'></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    
-        </div>
-      </div>
-    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-    <div class="container-fluid tn">
-      <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
-    <section >
-      <div class="nav-second">
-        <div class="typewriter">
-          <p class="p10">Success is a journey not a destination.</p>
-        </div>
-        <h1>
-          Make brand identities from scratch and help big brands stay
-          mighty
-        </h1>
-        <p class="p2">
-          I'm Vishwajeet, a designer with an affinity for working with
-          creative people on everything from brand indentities and
-          websites, to custom environmental graphics.
-        </p>
-
-        <div class="button2">
-          <button class="btn5">Get Started</button>
-        </div>
-        <div class="area">
-          <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
-</div>
-
-    <!-- portfolio section ends  -->
-
-    <!-- about section start  -->
-
-    <div class="container-fluid tb-about" id="about">
-      <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
-          <section class="about-section" >
-            <h1>About</h1>
-
-            <div data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1500" class="about-container">
-              <p>
-                Hi there!
-                I'm a UI designer and front-end developer from bihar, India.
-                I'm obessed with making things and even more obessed with making things better.
-                Currently I'm actively involved in web designing or user interface.
-                <br>
-                My specialty is front-end web design and development using HTML, CSS and JAVASCRIPT.
-                <br>
-                <!-- When I'm not designing, you'll find me in the gym or typing on laptops. -->
-              </p>
-
-              <img data-aos="flip-right" src="images/me.jpg" alt="me-img" />
-            </div>
-
-
-            <div data-aos="fade-up"
-            data-aos-duration="3500" class="about-me">
-              <ul>
-                <li data-aos="fade-up"
-                data-aos-duration="3000" ><span>BIRTHDAY // 3 JUNE 2001</span></li>
-                <li data-aos="fade-up"
-                data-aos-duration="2500"><span>AGE // 22</span></li>
-                <li data-aos="fade-up"
-                data-aos-duration="2000"><span>PHONE // 7070761869</span></li>
-                <li data-aos="fade-up"
-                data-aos-duration="1500"><span>DEGREE // B.TECH</span></li>
-                <li data-aos="fade-up"
-                data-aos-duration="1000"><span>EMAIL // kumarvishwajeet076@gmail.com</span></li>
-              </ul>
-              <ul>
-                <li data-aos="fade-up"
-                data-aos-duration="3000"><span>WHO // Vishwajeet Kumar</span></li>
-                <li data-aos="fade-up"
-                data-aos-duration="2500"><span>WHAT // WEB DESIGNER AND WEB DEVELOPER</span></li>
-                <li data-aos="fade-up"
-                data-aos-duration="2000"><span>WHERE // PATNA, BIHAR</span></li>
-                <li data-aos="fade-up"
-                data-aos-duration="1500"><span>WHEN // 2022, CURRENT</span></li>
-                <li data-aos="fade-up"
-                data-aos-duration="1000"><span>WHY // PASSION</span></li>
-              </ul>
-            </div>
-
-            <div class="skills">
-              <h1>Skill</h1>
-              <div  class="wrapper">
-                <div data-aos="flip-left" class="skill-container">
-                  <h2>My skills</h2>
-
-                  <div class="skills1">
-                    <div class="details">
-                      <span>HTML</span>
-                      <span>90%</span>
-                    </div>
-
-                    <div class="bar">
-                      <div id="html-bar"></div>
-                    </div>
-                  </div>
-
-                  <div class="skills1">
-                    <div class="details">
-                      <span>CSS</span>
-                      <span>70%</span>
-                    </div>
-
-                    <div class="bar">
-                      <div id="css-bar"></div>
-                    </div>
-                  </div>
-
-                  <div class="skills1">
-                    <div class="details">
-                      <span>JavaScript</span>
-                      <span>60%</span>
-                    </div>
-
-                    <div class="bar">
-                      <div id="javascript-bar"></div>
-                    </div>
-                  </div>
-
-                  <div class="skills1">
-                    <div class="details">
-                      <span>Jquery</span>
-                      <span>50%</span>
-                    </div>
-
-                    <div class="bar">
-                      <div id="jquery-bar"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <!-- about section end  -->
-
-    <!-- portfolio section start  -->
-
-    <div class="container-fluid tn" id="projects">
-      <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
-          <h1 class="portfolio-h1">Projects</h1>
-          <section data-aos="zoom-in" class="portfolio-section">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/projects/auto_quotes.png" class="autoquotes" alt="auto_quotes_page">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/projects/landing_page1.png" class="landingpage1" alt="landingpage1">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/projects/landing_page2.png" class="landingpage2" alt="landingpage2">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/projects/dynamic_page.png" class="dynamic_page" alt="dynamic_page">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/projects/landingpage3.png" alt="auto_quotes_page">
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-  </div>
-</div>
-</div> 
-
-
-
-
-
-    <!-- resume section  -->
-
-    <div class="container-fluid tb-about" id="resume">
-      <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
-          <h1 class="resume-h1">Resume</h1>
-          <section class="resume-section">
-
-            <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box1">
-              <h2>
-                Profile
-              </h2>
-              <p>Enthusiastic computer science undergraduate. Looking for a role, where I can grow and learn from experienced team members while drawing on project experience. Especially interested in web development as a full-stack developer. Proficient in various platforms, languages, and embedded systems. And have experiences with the latest cutting edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.</p>
-            </div>
-
-            <div class="main-box">
-            <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box2">
-              <h2>Education</h2>
-              <p>
-                <b>B.Tech, College Of Enginerring Roorkee</b>
-                <br>
-                Currently pursuing B.Tech in Computer Science.
-              </p>
-              <p>
-                <b>Vidya Sanskar High School</b>
-                <br>
-                12th CBSE Board, PCM Stream, secured 81.2%.
-              </p>
-
-              <p>
-                <b>J.M.V Residential Public School</b>
-                <br>
-                10th CBSE Board, secured 9.2 cgpa.
-              </p>
-            </div>
-
-            <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box3">
-              <h2>Skills</h2>
-              <p>
-                <ul>
-                  <li>HTML5 // INTERMEDIATE</li>
-                  <li>CSS // INTERMEDIATE</li>
-                  <li>JAVASCRIPT // SKILL-FUL</li>
-                  <li>JQUERY // SKILL-FULL</li>
-                  <li>JAVA // SKILL-FUL</li>
-                </ul>
-                <ul>
-                  <li>NODE-JS // SKILL-FUL</li>
-                  <li>EXPRESS-JS // SKILL-FUL</li>
-                  <li>MONGODB // SKILL-FUL</li>
-                  <li>TEMPLATE ENGINE // SKILL-FULL</li>
-                  <li>C++ // SKILL-FUL</li>
-                </ul>
-              </p>
-            </div>
-          </div>
-
-          <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box4">
-            <h2>Languages</h2>
-            <ul>
-              <li>English</li>
-              <li>Hindi(Native Speaker)</li>
-            </ul>
-          </div>
-          <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" class="box5">
-            <h2>Hobbies</h2>
-       <p>
-        My hobbies is to listen hip hop songs, typing and exploring different things on the Internet.
-       </p>     
-          </div>
-          <div class="resume-link">
-            <a href="https://resume.io/r/QTTSZjW0x
-            " target="_blank">Resume_Link</a>
-          </div>
-          </section>
-        </div>
-      </div>
-    </div>
-
-   <!-- end of resume section  -->
-
-
-   <!-- start of contact section  -->
-
-    <div class="container-fluid tn" id="contact">
-    <!-- <div class="container-fluid bg-light"> -->
-      <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
-          <h1 class="contact-h1">Contact</h1>
-
-          <section class="contact-container">
-            <div class="up-contact">
-            <div data-aos="zoom-in" class="cont1 con">
-              <img  class="cont-icons" src="images/icons/location.png" alt="location-img">
-              <p>Address: East ram krishna
-<br>                nagar patna-27</p>
-            </div>
-            <div data-aos="zoom-in" class="cont2 con">
-              <img class="cont-icons" src="images/icons/telephone-call.png" alt="call-img">
-              <p>Phone: <a href="">7070761869</a></p>
-            </div>
-
-            <div data-aos="zoom-in" class="cont3 con">
-              <img class="cont-icons" src="images/icons/email.png" alt="email-img">
-              <p>Email: <a href="https://mail.google.com " target="_blank">kumarvishwajeet076@gmail.com</a></p>
-            </div>
-            <div data-aos="zoom-in" class="cont4 con">
-              <img class="cont-icons" src="images/icons/web.png" alt="web-img">
-              <p>Website: <a href="https://www.google.com/" target="_blank">Google</a></p>
-            </div>
-          </div>
-          </section>
-
-          <section class="contact-container1">
-            <div class="alert">Your message has been sent</div>
-            <div class="down-contact">
-                <img data-aos="zoom-in-left" class="ladder-img" src="images/ladder.jpg" alt="ladder-img">
-              <div data-aos="zoom-in-right" class="form1">
-              <form action="" id="contactForm" >
-                <label for="fname">Full Name</label>
-
-                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
-
-                <label for="subject" >Subject</label>
-
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
-
-                <label for="email">Your Email</label>
-
-                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
-            
-    
-                <label for="message">Message</label>
-
-                <textarea  id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
-            
-                <input type="submit" value="Submit" src="page/thanks.html">
-              </form>
-            </div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- footer html  -->
-
-
-    <div class="container-fluid tb-about">
-      <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
-
-          <section class="footer-section">
-            <div class="footer-div">
-              <img src="images/social/linkedin.png"  alt="linkedin" class="linkedin">
-              <img src="images/social/github.png" alt="github" class="github">
-              <img src="images/social/instagram.png" alt="instagram" class="instagram">
-              <img src="images/social/pinterest.png" alt="pinterest" class="pinterest">
-             
-            </div>
-          </section>
-          </div>
-          </div>
-          </div>
-
-
-          <div class="container-fluid tn">
-            <div class="row">
-              <div class="col-md-10 col-12 mx-auto">  
-                <div class="copyright">
-                  <div class="copyright2">
-                    © 2022 Copyright:
-                    <a class="copyright1" href="https://www.google.com/">mywebsite</a>
-                  </div>
-                </div>
-                </div>
-                </div>
-                </div>
-
-
-    <!-- JavaScript Bundle with Popper -->
-
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/form.js"></script>
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
   </body>
 </html>
