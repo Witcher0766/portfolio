@@ -20,73 +20,6 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-// const body = document.querySelector("body"),
-//       nav = document.querySelector("nav"),
-//       modeToggle = document.querySelector(".dark-light"),
-//       searchToggle = document.querySelector(".searchToggle"),
-//       sidebarOpen = document.querySelector(".sidebarOpen"),
-//       siderbarClose = document.querySelector(".siderbarClose");
-
-//       let getMode = localStorage.getItem("mode");
-//           if(getMode && getMode === "dark-mode"){
-//             body.classList.add("dark");
-//           }
-
-// // js code to toggle dark and light mode
-//       modeToggle.addEventListener("click" , () =>{
-//         modeToggle.classList.toggle("active");
-//         body.classList.toggle("dark");
-
-//         // js code to keep user selected mode even page refresh or file reopen
-//         if(!body.classList.contains("dark")){
-//             localStorage.setItem("mode" , "light-mode");
-//         }else{
-//             localStorage.setItem("mode" , "dark-mode");
-//         }
-//       });
-
-// // js code to toggle search box
-//         searchToggle.addEventListener("click" , () =>{
-//         searchToggle.classList.toggle("active");
-//       });
- 
-      
-// //   js code to toggle sidebar
-// sidebarOpen.addEventListener("click" , () =>{
-//     nav.classList.add("active");
-// });
-
-// body.addEventListener("click" , e =>{
-//     let clickedElm = e.target;
-
-//     if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-//         nav.classList.remove("active");
-//     }
-// });
-
-
-
-
-
-// top scrolll bar 
-
-
-// $(document).ready(function(){
-//   window.scroll(function(){
-//     if(window.scrollTop() > 300){
-//       $('.pointer i').css({
-//         "opacity":"1", "pointer-events":"auto"
-//       });
-//     }else{
-//       $('.pointer i').css({
-//         "opacity":"0", "pointer-events":"none"
-//       });
-//     }
-//   });
-//   $('.pointer i').click(function(){
-//     $('html').animate({scrollTop:0}, 500);
-//   });
-// });
 
 
 
@@ -118,19 +51,30 @@ $('.pinterest').click(function(e) {
 
 
 
-// projects links 
-
-
-
-// counter 
 
 
 
 
+function displayOut() {
+var preloader = document.getElementById('preloader');
+var loader = document.getElementById('loader');
+setTimeout(function(){ 
+  preloader.style.opacity='0';
+  preloader.style.zIndex= '-10';
+  loader.style.zIndex = '-10';
+}, 3000);
+}
+displayOut();
 
 
 
-
+$(window).scroll(function(){
+  if ($(this).scrollTop() < 50) {
+     $('.new').addClass('newClass');
+  } else {
+     $('.new').removeClass('newClass');
+  }
+});
 
 
 

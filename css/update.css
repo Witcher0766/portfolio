@@ -5,6 +5,7 @@
 }
 .nav-bar {
     /* border: 2px solid red; */
+
     width: 30%;
     padding: 10px 0px 10px 0px;
     margin: auto;
@@ -64,46 +65,48 @@
     padding: 60px 20px 60px 20px;
     display: flex;
     margin-top: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: auto;
-    gap: 3rem;
+    /* margin: auto; */
+    gap: 2rem;
 }
 
+.skill-first {
+    /* border: 2px solid green; */
+    text-align: center;
+    padding: 5px;
+    width: calc(100%/8);
+    cursor: pointer;
+}
 
 .skil {
-    height: 25vh;
+    /* border: 2px solid orange; */
+    padding: 10px;
+    width: 100%;
     cursor: pointer;
-    box-shadow: var(--clr-sky-dark-blue) 0px 3px 8px;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: black;
-
-
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 50%;
+    /* background-color: #48dbfb; */
+    background-color: var(--clr-sky-dark-blue);
+    /* background-color: grey; */
+    transition: all 0.3s ease-in;
 }
 
 .skil:hover {
     /* background-color: var(--clr-sky-dark-blue); */
-    background-color: #dfe6e9;
-
+    /* background-color: #dfe6e9; */
+    /* background-color: var(--clr-sky-dark-blue); */
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 
-.skill-first {
-    width: calc(100%/6);
-    /* gap: 1rem; */
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    margin-bottom: 10px;
-}
 
 
 .skill-first p {
     color: var(--clr-sky-dark-blue);
-    padding-top: 20px;
+    padding: 10px 5px 0px 5px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     /* border-bottom: 2px solid whitesmoke; */
 }
 
@@ -136,10 +139,8 @@
     gap: 1rem;
     border-radius: 10px;
     min-height: 58vh;
-    /* height: auto; */
-    /* margin: 20px 0px 20px 0px; */
     background-color: #2d3436;
-    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  
 }
 
 .project-btn {
@@ -154,10 +155,8 @@
 }
 .project-btn li a  {
     text-decoration: none;
-    /* color: black; */
     padding: 7px 15px 7px 15px;
     border: none;
-    /* background-color: var(--clr-sky-dark-blue); */
     font-size: 18px;
     cursor: pointer;
     transition: all 0.3s;
@@ -169,7 +168,6 @@
 
 .project-btn i {
     padding-right: 10px;
-    /* transition: all 0.3s; */
     color: black;
 }
 
@@ -205,12 +203,8 @@
         width: calc(100%/2.5);
     }
 
-    .skil {
-        height: 30vh;
-    }
     .skill-first {
-        width: calc(100%/3);
-    margin-bottom: 0px;
+        width: calc(100%/6);
 
     }
 }
@@ -219,15 +213,16 @@
     .project-1 {
         width: calc(100%/1.5);
     }
+    .wrapper {
+        gap: 1rem;
+    }
 }
 
 @media screen and (max-width: 612px){
     .skill-first {
-        width: calc(100%/2);
+        width: calc(100%/4);
     }
-    .skill {
-        height: 35vh;
-    }
+  
 }
 
 @media screen and (max-width: 555px) {
@@ -235,14 +230,12 @@
         width: calc(100%/0.5);
     }
     .skill-first {
-        width: calc(100%/1.3);
-        /* height: 40vh; */
+        width: calc(100%/3);
+    
     }
-    .skil {
-        height: 30vh;
-    }
+
     .wrapper {
-        gap: 2rem;
+        gap: 0.5rem;
     }
 }
 
@@ -336,7 +329,8 @@
     justify-content: space-between;
   }
   .counter-up .content .box{
-    border: 1px dashed rgba(255,255,255,0.6);
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     width: calc(25% - 30px);
     border-radius: 5px;
     display: flex;
@@ -414,3 +408,14 @@
   .disable-project a:hover {
     background-color: grey;
   }
+
+
+
+
+  .newClass {
+    background-color: white;
+  }
+
+
+
+
